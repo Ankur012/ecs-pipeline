@@ -1,0 +1,18 @@
+{
+    "family": "django-helloworld",
+    "containerDefinitions": [
+        {
+            "image": "xxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/sample-1:<tag>",
+            "name": "django-helloworld",
+            "cpu": 1,
+            "memory": 2,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8000,
+                    "hostPort": 80
+                }
+            ]
+        }
+    ]
+}
