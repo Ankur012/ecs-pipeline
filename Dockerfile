@@ -8,3 +8,4 @@ RUN ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && apt-get update \
     && cd django-helloworld && pip3 install -r requirements.txt \
     && python3 manage.py migrate && chmod +x /opt/run.sh  
 RUN /opt/run.sh
+ENTRYPOINT ["python3","manage.py","runserver"]
